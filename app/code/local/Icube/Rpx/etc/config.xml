@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Icube_Rpx>
+            <module>1.0.0</module>
+        </Icube_Rpx>
+    </modules>
+    <global>
+        <models>
+            <icube_rpx>
+                <class>Icube_Rpx_Model</class>
+            </icube_rpx>
+        </models>
+    </global>
+    <!-- Default configuration -->
+    <default>
+        <carriers>
+            <icube_rpx>
+                <active>1</active>
+                <model>icube_rpx/carrier</model>
+                <title>RPX Shipping</title>
+                <sort_order>10</sort_order>
+                <sallowspecific>1</sallowspecific>
+                <specificcountry>ID</specificcountry>
+                <origin>JAK</origin>
+                <service>all</service>
+                <handlingfee>0</handlingfee>
+            </icube_rpx>
+        </carriers>
+    </default>
+</config>
