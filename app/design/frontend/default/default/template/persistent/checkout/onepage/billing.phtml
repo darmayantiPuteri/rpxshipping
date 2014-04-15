@@ -1,18 +1,16 @@
-<pre>
 <?php
     require_once(Mage::getBaseDir('lib') . '/nusoap/nusoap.php');
     $wsdl="http://api.rpxholding.com/wsdl/rpxwsdl.php?wsdl";
     $client =new nusoap_client($wsdl,true);
     
-    $username = 'eka';
-    $password= 'premium123';
-    $account_number = '800041450';
+    $username = Mage::getStoreConfig('carriers/icube_rpx/username');
+    $password= Mage::getStoreConfig('carriers/icube_rpx/password');
+    $account_number = Mage::getStoreConfig('carriers/icube_rpx/account_number');
     
     $result = $client->call('getCity', array('user' => $username, 'password' => $password));
     $citys = simplexml_load_string($result);
     //print_r($citys);
 ?>
-</pre>
 <form id="co-billing-form" action="">
 <fieldset>
     <ul class="form-list">
