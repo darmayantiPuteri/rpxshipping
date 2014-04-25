@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<config>
+    <modules>
+        <Icube_Brandscustom>
+            <module>1.0.0</module>
+        </Icube_Brandscustom>
+    </modules>
+    <admin>
+        <routers>
+            <adminhtml>
+                <args>
+                    <modules>
+                        <Icube_Brandscustom before="Belvg_Brands">Icube_Brandscustom_Adminhtml</Icube_Brandscustom>
+                    </modules>
+                </args>
+            </adminhtml>
+        </routers>
+    </admin>
+</config>
