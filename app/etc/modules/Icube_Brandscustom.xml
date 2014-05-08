@@ -4,6 +4,9 @@
         <Icube_Brandscustom>
             <active>true</active>
             <codePool>local</codePool>
+	        <depends>
+	            <Belvg_Brands />
+	        </depends>
         </Icube_Brandscustom>
     </modules>
 </config>

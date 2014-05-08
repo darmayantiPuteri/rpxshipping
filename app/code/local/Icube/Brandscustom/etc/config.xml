@@ -2,7 +2,7 @@
 <config>
     <modules>
         <Icube_Brandscustom>
-            <module>1.0.0</module>
+            <version>0.1.0</version>
         </Icube_Brandscustom>
     </modules>
     <admin>
@@ -16,4 +16,13 @@
             </adminhtml>
         </routers>
     </admin>
+    <global>
+        <resources>
+            <icube_brandscustom_setup>
+                <setup>
+                    <module>Icube_Brandscustom</module>
+                </setup>
+            </icube_brandscustom_setup>
+        </resources>
+    </global>
 </config>
